@@ -1,0 +1,18 @@
+num = 14
+tentativa = 0
+limite = 3
+while True:
+  chute = int(input('Tente adivinhar um número de 0 a 20. São 3 tentativas. '))
+  tentativa += 1
+  if chute != num:
+    print('Tente novamente! ')
+   
+  else:
+    print('Parabéns! Você arrasou! O número 14 é o que estava em minha mente!')
+    break
+  
+  if tentativa != limite:
+    print(f'valha! você utilizou {tentativa} das suas chances')
+  else:
+    print('Ih! Acabaram as tentativas. Você não é bom em adivinhação, assim como eu. Ta tudo bem! O número era 14. ')
+    break
