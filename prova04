@@ -1,0 +1,9 @@
+numi = int(input('Digite um número de inicío: '))
+numf = int(input('Digite um número final: '))
+
+soma = 0
+for numero in range (numi,numf):
+    if numero %2 == 0:
+        soma += numero
+
+print(f'A soma dos números pares desse intervalo é:{soma} ')
